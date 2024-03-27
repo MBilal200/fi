@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+        .container{
+            width: 1100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            height:350px;
+            max-width:350px;
+            transform-origin: center;
+            transform: perspective(800px) rotateY(20deg);
+            transition: 0.5s;
+            /* background-image: linear-gradient(to bottom, transparent, transparent, #0004); */
+        }
+        .container:hover img {
+            opacity: 0.1;
+        }
+        .container img:hover {
+            transform: perspective(500px) rotateY(0deg);
+            opacity: 1;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+
+        }
+        p::selection{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>the selsect</p>
+    <div class="container">
+        <img src="./pexels-mike-bird-112460.jpg" alt="winter jacket
+        ">
+        <img src="./pexels-mike-bird-120049.jpg" alt="">
+        <img src="./pexels-pavlo-luchkovski-337909.jpg" alt="">
+
+    
+    </div>
+</body>
+</html>
